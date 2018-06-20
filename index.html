@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Projet 3</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta name="viewport" content="initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+  <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+    
+    
+    <meta charset="utf-8">
+  </head>
+  <body>
+    <header>
+      <div id="logo">
+        <img src="image/logo.gif">
+      </div>
+    </header>
+    <section>
+     <div class="wrap">
+        <div id="arrow-left" class="arrow"></div>
+        <div id="slider">
+          <div class="slide slide1">
+            <div class="slide-content">
+              <span></span>
+            </div>
+          </div>
+          <div class="slide slide2">
+            <div class="slide-content">
+              <span></span>
+            </div>
+          </div>
+          <div class="slide slide3">
+            <div class="slide-content">
+              <span></span>
+            </div>
+          </div>
+          <div class="slide slide4">
+            <div class="slide-content">
+              <span></span>
+            </div>
+          </div>
+        </div>
+        <div id="arrow-right" class="arrow"></div>
+      </div>
+
+    </section>
+
+    <section id="page">
+        <div id="bloc">
+          <div id="blocmap">
+            <div id="map"></div>
+          </div>
+          <div id="form">
+            <div id="reservation">
+              <div class="row">
+                <div class="col s12 m12">
+                  <div class="card blue-grey darken-1">
+                    <div class="card-content white-text">
+                      <span class="card-title">Détails de la station</span>
+                      <div id="stationName"></div>
+                      <div id="stationAddress"></div>
+                      <div id="status"></div>
+                      <div id="available_bike_stands"></div>
+                      <div id="availableBikes"></div>
+                      </br>
+                      <div id="reservationButton">
+                        <!--<button id="reservationButton">Reservé votre vélo</button>--> 
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="responsive">
+              <div class="container">
+                <div class="row">
+                  <div class="col-md-12">
+                    <canvas id="sig-canvas" width="200px" height="100px">
+                    </canvas>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-12">
+                    <button class="btn btn-default" id="sig-clearBtn">Clear Signature</button>
+                  </div>
+                </div>
+              </div>
+              
+              <div id="submitButton">
+                <!--<button id="submitButton">Confirmé votre reservation</button>--> 
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="footer">
+          <div class="row">
+            <div class="col s12 m12">
+              <div class="card blue-grey darken-1">
+                <div class="card-content white-text">
+                  <span class="card-title">Détails de la reservation</span>
+                    <div id="footerMessage"></div>
+                    <div id="chrono"></div>
+                    <div id="cancel">
+                      <!--<button id="cancelButton">Annulé reservation</button>-->
+                    </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </section>
+    <script type="text/javascript" src="slider.js"></script>
+    <script type="text/javascript" src="ajax.js"></script>
+    
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB9NIiNwwpI_-klkNx_i4VcW3WwWkb49c4"></script>
+    <script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js">
+    </script>
+    <script type="text/javascript" src="Chronobis.js"></script>
+    <script type="text/javascript" src="Map.js"></script>
+    <script type="text/javascript" src="Resa.js"></script>
+    <script type="text/javascript" src="Chrono.js"></script>
+    
+    <script src="canvas.js"></script>
+    
+  </body>
+</html>
